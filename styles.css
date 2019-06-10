@@ -1,0 +1,83 @@
+.box{
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  padding: 10px;
+
+}
+.box1{background-color: blue;}
+.box2{background-color: red;}
+.box3{background-color: black;}
+.box4{background-color: grey;}
+.box5{background-color: yellow;}
+.box6{background-color: green;}
+.box7{background-color: blue;}
+.box8{background-color: purple;}
+.box9{background-color: red;}
+.box10{background-color: orange;}
+
+.container{
+  /* es posa en horitzontal */
+  display: flex;
+  min-height: 100vh;
+  border: 3px solid orange;
+  /* flex-direction: row; THIS IS THE DEFAULT HORIZONTAL */
+  /* flex-direction: column; IT PUTS THE ITEMS COLUMN */
+  /* flex-direction: row-reverse; REVERSES */
+  /* flex-direction: column-reverse; */
+
+  /* flex-wrap: nowrap; BY DEFAULT */
+  /* flex-wrap: wrap; IT STRETCHES ACROSS CONTAINER SQUARES */
+  /* flex-wrap: wrap-reverse; REVERSES SQUARES */
+  flex-wrap: wrap;
+
+/* JUSTIFY FROM LEFT-RIGHT AND ALSO FROM TOP-BOTTON depends on axis */
+  /* justify-content: flex-start;
+  justify-content: center; */
+  /* justify-content: flex-end; */
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+
+/* ALGIN you need a minimum height for containers */
+  /* align-items: flex-start; */
+  /* align-items: center; */
+  /* align-items: baseline; bottom of every letter is aligned ! */
+  /* align-items: flex-end; */
+
+  /* ALIGN CONTENT we need a wrapping flex-wrap:WRAP plus width of box  */
+  /* align-content: center; */
+  /* align-content: space-between; */
+
+
+
+}
+
+/* flex direction MAIN AXIS LEFTRIGHT -  CROSS AXIS UPDOWN  */
+.box{
+  /* width: 300px; it tries to distibute all in the screen */
+  width: 30.3333333333333333333%
+  /* border: 10px solid blue; YOU CAN ADD PADDING */
+  /* flex: 1; */
+}
+
+.box3{
+  /* order: 5; YOU MOVE THE ORDER OF ELEMENT "SELECTING PROBLEM" */
+  /* ORDER is good for responsivness */
+  /* padding-bottom: 200px; */
+}
+
+/* ALIGN SELF to align different from the rest */
+/* .box6{
+  padding-bottom: 0;
+  align-self: center;
+}
+.box9{
+  padding-bottom: 50px;
+  align-self: flex-end;
+} */
+
+
+/* FLEX-SHRINK:1 it shrinks when responsive
+FLEX-GROW:2 it grows when responsive
+FLEX-BASIS: default 400px
+you can do it: FLEX: 10 5 400PX */
